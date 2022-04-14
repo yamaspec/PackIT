@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackIT.Api", "PackIT.Api\PackIT.Api.csproj", "{175DBA16-D6E5-4ECC-AF96-E792C2A1870C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackIT.Domain", "PackIT.Domain\PackIT.Domain.csproj", "{6879F72C-0627-4CCF-927D-62DB5D704ADD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackIT.Application", "PackIT.Application\PackIT.Application.csproj", "{1BEE9846-F2D6-4359-A284-072E874D006C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackIT.Infrastructure", "PackIT.Infrastructure\PackIT.Infrastructure.csproj", "{5522CF39-A0BA-4CC2-88CE-3B29B8E49C51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackIT.Shared", "Shared\PackIT.Shared\PackIT.Shared.csproj", "{55B1BE45-E93D-409F-A90B-346A129111F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackIT.SharedAbstractions", "Shared\PackIT.SharedAbstractions\PackIT.SharedAbstractions.csproj", "{82BC9948-8D9E-4EDD-9E1C-E0144EEC472B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{175DBA16-D6E5-4ECC-AF96-E792C2A1870C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{175DBA16-D6E5-4ECC-AF96-E792C2A1870C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{175DBA16-D6E5-4ECC-AF96-E792C2A1870C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{175DBA16-D6E5-4ECC-AF96-E792C2A1870C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6879F72C-0627-4CCF-927D-62DB5D704ADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6879F72C-0627-4CCF-927D-62DB5D704ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6879F72C-0627-4CCF-927D-62DB5D704ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6879F72C-0627-4CCF-927D-62DB5D704ADD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BEE9846-F2D6-4359-A284-072E874D006C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BEE9846-F2D6-4359-A284-072E874D006C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BEE9846-F2D6-4359-A284-072E874D006C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BEE9846-F2D6-4359-A284-072E874D006C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5522CF39-A0BA-4CC2-88CE-3B29B8E49C51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5522CF39-A0BA-4CC2-88CE-3B29B8E49C51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5522CF39-A0BA-4CC2-88CE-3B29B8E49C51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5522CF39-A0BA-4CC2-88CE-3B29B8E49C51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55B1BE45-E93D-409F-A90B-346A129111F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55B1BE45-E93D-409F-A90B-346A129111F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55B1BE45-E93D-409F-A90B-346A129111F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55B1BE45-E93D-409F-A90B-346A129111F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82BC9948-8D9E-4EDD-9E1C-E0144EEC472B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82BC9948-8D9E-4EDD-9E1C-E0144EEC472B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82BC9948-8D9E-4EDD-9E1C-E0144EEC472B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82BC9948-8D9E-4EDD-9E1C-E0144EEC472B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA1D3252-AFAF-420D-8A2F-2F7FAEE7067E}
+	EndGlobalSection
+EndGlobal
