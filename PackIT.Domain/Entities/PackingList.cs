@@ -10,20 +10,21 @@ namespace PackIT.Domain.Entities
 {
     public class PackingList : AggregateRoot<PackingListId>
     {
-        public PackingListId Id { get; private set; }
+        //public PackingListId Id { get; private set; }
 
         private PackingListName _name;
         private Localization _localization;
 
         public readonly LinkedList<PackingItem> _items = new();
 
-        internal PackingList(Guid id, PackingListName name, Localization localization, LinkedList<PackingItem> items)
+        internal PackingList(PackingListId id, PackingListName name, Localization localization, LinkedList<PackingItem> items)
             : this(id, name, localization)
         {
-            AddItems(items);
+            AddItems(items);    // If called when loading data from the database the validation done in AddItem() is
+                                // meaningless, reduce performance. It should be better to do _items = items;
         }
 
-        internal PackingList(Guid id, PackingListName name, Localization localization)
+        internal PackingList(PackingListId id, PackingListName name, Localization localization)
         {
             Id = id;
             _name = name;
