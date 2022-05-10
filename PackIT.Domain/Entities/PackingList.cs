@@ -20,8 +20,8 @@ namespace PackIT.Domain.Entities
         internal PackingList(PackingListId id, PackingListName name, Localization localization, LinkedList<PackingItem> items)
             : this(id, name, localization)
         {
-            AddItems(items);    // If called when loading data from the database the validation done in AddItem() is
-                                // meaningless, reduce performance. It should be better to do _items = items;
+            _items = items;    // If called when loading data from the database the validation done in AddItem() is
+                               // meaningless, reduce performance. It should be better to do _items = items;
         }
 
         internal PackingList(PackingListId id, PackingListName name, Localization localization)
