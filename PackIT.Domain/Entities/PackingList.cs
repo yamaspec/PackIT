@@ -1,27 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using PackIT.Domain.Events;
+﻿using PackIT.Domain.Events;
 using PackIT.Domain.Exceptions;
 using PackIT.Domain.ValueObjects;
 using PackIT.SharedAbstractions.Domain;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace PackIT.Domain.Entities
 {
     public class PackingList : AggregateRoot<PackingListId>
     {
-        //public PackingListId Id { get; private set; }
+        public PackingListId Id { get; private set; }
 
         private PackingListName _name;
         private Localization _localization;
 
         public readonly LinkedList<PackingItem> _items = new();
 
-        internal PackingList(PackingListId id, PackingListName name, Localization localization, LinkedList<PackingItem> items)
+        private PackingList(PackingListId id, PackingListName name, Localization localization, LinkedList<PackingItem> items)
             : this(id, name, localization)
         {
-            _items = items;    // If called when loading data from the database the validation done in AddItem() is
-                               // meaningless, reduce performance. It should be better to do _items = items;
+            // If called when loading data from the database the validation done in AddItem() is
+            // meaningless, reduce performance. It should be better to do _items = items;
+            _items = items;
+        }
+
+        private PackingList()
+        {
         }
 
         internal PackingList(PackingListId id, PackingListName name, Localization localization)

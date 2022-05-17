@@ -1,9 +1,10 @@
 ﻿using PackIT.Application.DTO;
+using PackIT.Application.Queries;
 using PackIT.SharedAbstractions.Queries;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace PackIT.Application.Queries.Handlers
+namespace PackIT.Infrastructure.Queries.Handlers
 {
     public class SearchPackingListHandler : IQueryHandler<SearchPackingList, IEnumerable<PackingListDto>>
     {
